@@ -1,3 +1,38 @@
+1. Download the ZIP file from GitHub. Extract it to a folder inside your XAMPP htdocs directory: (C:\xampp\htdocs\MY-WIFI-SYSTEM)
+2. Open Terminal / Command Prompt . (cd C:\xampp\htdocs\MY-WIFI-SYSTEM)
+3. Install Dependencies (composer install)
+4. Configure Environment (copy .env.example .env  )
+5. Edit .env for your local XAMPP setup. Typical changes: (APP_NAME=MY-WIFI-SYSTEM
+APP_URL=http://localhost
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=my_wifi_db      # create this in phpMyAdmin
+DB_USERNAME=root
+DB_PASSWORD=
+)
+6. phpMyAdmin (http://localhost/phpmyadmin) and create a new database with the name in DB_DATABASE
+7. Generate Application Key (php artisan key:generate)
+8. Run Migrations (php artisan migrate)
+9. run seeders (php artisan db:seed)
+10. Serve the Application (php artisan serve)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
